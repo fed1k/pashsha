@@ -15,7 +15,9 @@ Under the repository name, click the Clone or download green button.
 
 
 Run this in your git bash:
-  `git clone https://github.com/RaoAkif/BudgetApp`
+  ```
+  git clone https://github.com/fed1k/pashsha.git
+  ```
 
 ## Author:
  * Github: [fed1k](https://github.com/fed1k)
@@ -28,5 +30,6 @@ Give a ⭐️ if you like this project!
 Hat tip to anyone whose code was used
 Inspiration
 etc
-📝 License
-This project is MIT licensed.
+
+## 📝 License
+This project is [MIT](./MIT.md) licensed.
