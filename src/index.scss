@@ -1,0 +1,101 @@
+@mixin sideBarToggler {
+  height: 100vh;
+  width: 20vw;
+  background-color: #008b8b;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 90vh;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 90vh;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 90px;
+  opacity: 0.1;
+  font-weight: bold;
+}
+
+.form {
+  height: 50px;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 93% 7%;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 38%);
+  border: 1px solid #d2d2d2;
+  border-radius: 25px;
+  outline: none;
+
+  input {
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 0 18px;
+    font-size: 18px;
+  }
+}
+
+.hamburger {
+  font-size: 35px;
+  align-self: flex-start;
+  justify-self: flex-start;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.plus {
+  align-self: center;
+  justify-self: flex-end;
+  padding-right: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sidebar-container-passive {
+  @include sideBarToggler();
+
+  transform: translateX(-100%);
+}
+
+.sidebar-container-active {
+  transform: translateX(0);
+
+  @include sideBarToggler();
+}
+
+.close {
+  font-size: 40px;
+  margin: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sidebar-list-container {
+  list-style: none;
+  color: white;
+}
+
+.sidebar-list-container-list {
+  padding: 15px 0;
+  font-size: 18px;
+}
