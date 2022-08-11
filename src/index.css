@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 90vh;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+  height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 90px;
+  opacity: 0.1;
+  font-weight: bold;
+}
+
+.form {
+  height: 50px;
+  width: 50vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 93% 7%;
+  grid-template-columns: 93% 7%;
+  -webkit-box-shadow: 0 1px 6px 0 black;
+  box-shadow: 0 1px 6px 0 black;
+  border: 1px solid #d2d2d2;
+  border-radius: 25px;
+  outline: none;
+}
+
+.form input {
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  padding: 0 18px;
+  font-size: 18px;
+}
+
+.hamburger {
+  font-size: 35px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.plus {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  justify-self: flex-end;
+  padding-right: 20px;
+}
+
+.plus:hover {
+  cursor: pointer;
+}
+
+.sidebar-container-passive {
+  height: 100vh;
+  width: 20vw;
+  background-color: #008b8b;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.sidebar-container-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  height: 100vh;
+  width: 20vw;
+  background-color: #008b8b;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.close {
+  font-size: 40px;
+  margin: 30px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.sidebar-list-container {
+  list-style: none;
+  color: white;
+}
+
+.sidebar-list-container-list {
+  padding: 15px 0;
+  font-size: 18px;
+}
+/*# sourceMappingURL=index.css.map */
