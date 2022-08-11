@@ -13,6 +13,10 @@ To get a local copy up and running follow these simple example steps:
 Under the repository name, click the Clone or download green button.
    [clone](git@github.com:fed1k/todowithReact.git)
 
+
+Run this in your git bash:
+  `git clone https://github.com/RaoAkif/BudgetApp`
+
 ## Author:
  * Github: [fed1k](https://github.com/fed1k)
  * LinkedIn: [Firdavs Allamurotov](https://www.linkedin.com/in/firdavs-allamurotov-12b60a226/)
